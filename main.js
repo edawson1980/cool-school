@@ -14,3 +14,12 @@ class School{
     return this._numberOfStudents;
   }
 }
+class Primary extends School{
+  constructor(pickupPolicy){
+    super(name, level, numberOfStudents);
+    this._pickupPolicy = pickupPolicy;
+  }
+  get pickupPolicy(){
+    return this._pickupPolicy;
+  }
+}
