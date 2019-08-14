@@ -24,6 +24,12 @@ class School{
   quickFacts(){
     console.log(`${name} educates ${numberOfStudents} students at the ${level} school level.`);
   }
+  //static method:
+  static pickSubstituteTeacher(substituteTeachers){
+    //generate random whole number btwn 0 and 1 less than the length of the array (zero-index)
+    let subIndex = Math.floor(substituteTeachers.length * Math.random());
+    return substituteTeachers[subIndex];
+  }
 }
 class Primary extends School{
   constructor(pickupPolicy){
