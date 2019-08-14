@@ -55,3 +55,6 @@ class High extends School{
     console.log(this._sportsTeams);
   }
 }
+//testing:
+const lorraineHansbury = new Primary('Lorraine Hansbury', 514, 'Students must be picked up by a parent, guardian, or a family member over the age of 13.');
+lorraineHansbury.quickFacts();
