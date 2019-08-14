@@ -50,4 +50,8 @@ class High extends School{
     super(name, 'high', numberOfStudents);
     this._sportsTeams = sportsTeams;
   }
+  get sportsTeams(){
+    return this._sportsTeams;
+    console.log(this._sportsTeams);
+  }
 }
