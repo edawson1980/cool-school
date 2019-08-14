@@ -13,6 +13,14 @@ class School{
   get numberOfStudents(){
     return this._numberOfStudents;
   }
+  //setter method that confirms first confirms input to be a number:
+  set numberOfStudents(newNumber){
+    if(typeof newNumber === 'number'){
+      this._numberOfStudents = newNumber;
+    }else{
+      console.log('Invalid input: numberOfStudents must be set to a Number.');
+    }
+  }
 }
 class Primary extends School{
   constructor(pickupPolicy){
