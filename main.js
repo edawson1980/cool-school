@@ -40,3 +40,8 @@ class Primary extends School{
     return this._pickupPolicy;
   }
 }
+class Middle extends School{
+  constructor(){
+    super(name, 'middle', numberOfStudents);
+  }
+}
