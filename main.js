@@ -33,7 +33,7 @@ class School{
 }
 class Primary extends School{
   constructor(pickupPolicy){
-    super(name, level, numberOfStudents);
+    super(name, 'primary', numberOfStudents);
     this._pickupPolicy = pickupPolicy;
   }
   get pickupPolicy(){
