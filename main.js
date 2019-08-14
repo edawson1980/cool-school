@@ -21,6 +21,9 @@ class School{
       console.log('Invalid input: numberOfStudents must be set to a Number.');
     }
   }
+  quickFacts(){
+    console.log(`${name} educates ${numberOfStudents} students at the ${level} school level.`);
+  }
 }
 class Primary extends School{
   constructor(pickupPolicy){
